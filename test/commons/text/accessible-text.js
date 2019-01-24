@@ -2862,6 +2862,7 @@ describe('text.accessibleTextVirtual', function() {
 		// Skip from 128 - 138 as those are name description cases
 
 		it('passes test 139', function() {
+			this.timeout(30000);
 			fixture.innerHTML =
 				'<style>' +
 				'  .hidden { display: none; }' +
