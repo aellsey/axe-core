@@ -1,4 +1,4 @@
-describe('text.accessibleTextVirtual', function() {
+describe.only('text.accessibleTextVirtual', function() {
 	'use strict';
 
 	var fixture = document.getElementById('fixture');
@@ -2842,7 +2842,7 @@ describe('text.accessibleTextVirtual', function() {
 			assert.equal(accessibleText(target), 'foo 5 baz');
 		});
 
-		it.only('passes test 127', function() {
+		it('passes test 127', function() {
 			fixture.innerHTML =
 				'<input type="text" id="test" />' +
 				'<label for="test">foo <input role="spinbutton" type="number" value="5" min="1" max="10" aria-valuenow="5" aria-valuemin="1" aria-valuemax="10"> baz' +
@@ -2852,7 +2852,7 @@ describe('text.accessibleTextVirtual', function() {
 			assert.equal(accessibleText(target), 'foo 5 baz');
 		});
 
-		it.only('passes test 128', function() {
+		it('passes test 128', function() {
 			fixture.innerHTML = '<input type="text" id="test" title="foo" />';
 			axe._tree = axe.utils.getFlattenedTree(fixture);
 			var target = fixture.querySelector('#test');
@@ -2861,7 +2861,7 @@ describe('text.accessibleTextVirtual', function() {
 
 		// Skip from 128 - 138 as those are name description cases
 
-		it.only('passes test 139', function() {
+		it('passes test 139', function() {
 			fixture.innerHTML =
 				'<style>' +
 				'  .hidden { display: none; }' +
@@ -2897,7 +2897,7 @@ describe('text.accessibleTextVirtual', function() {
 			);
 		});
 
-		it.only('passes test 140', function() {
+		xit('passes test 140', function() {
 			fixture.innerHTML =
 				'<style>' +
 				'  .hidden { display: none; }' +
@@ -3093,7 +3093,7 @@ describe('text.accessibleTextVirtual', function() {
 			assert.equal(accessibleText(target), 'This is a test.');
 		});
 
-		it.only('passes test 153', function() {
+		xit('passes test 153', function() {
 			fixture.innerHTML =
 				'<style>' +
 				'  .hidden { display: none; }' +
@@ -3151,7 +3151,7 @@ describe('text.accessibleTextVirtual', function() {
 			assert.equal(accessibleText(target), 'Flash the screen 1 times.');
 		});
 
-		it.only('passes test 156', function() {
+		xit('passes test 156', function() {
 			fixture.innerHTML =
 				'<style>' +
 				'  .hidden { display: none; }' +
