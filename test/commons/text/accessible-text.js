@@ -2897,7 +2897,7 @@ describe.only('text.accessibleTextVirtual', function() {
 			);
 		});
 
-		xit('passes test 140', function() {
+		it('passes test 140', function() {
 			fixture.innerHTML =
 				'<style>' +
 				'  .hidden { display: none; }' +
