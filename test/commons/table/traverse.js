@@ -1,5 +1,5 @@
 /* global fixture */
-describe.only('table.traverse', function() {
+describe('table.traverse', function() {
 	var table, dummyTable, topRight, bottomLeft;
 	beforeEach(function() {
 		table = axe.commons.table;

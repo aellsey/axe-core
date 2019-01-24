@@ -1,4 +1,4 @@
-describe('text.formControlValue', function() {
+describe.only('text.formControlValue', function() {
 	var __methods, __unsupported;
 	var formControlValue = axe.commons.text.formControlValue;
 	var fixtureSetup = axe.testUtils.fixtureSetup;
