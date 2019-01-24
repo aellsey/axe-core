@@ -1,4 +1,4 @@
-describe.only('text.accessibleTextVirtual', function() {
+describe('text.accessibleTextVirtual', function() {
 	'use strict';
 
 	var fixture = document.getElementById('fixture');
