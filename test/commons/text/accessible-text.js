@@ -2852,7 +2852,7 @@ describe('text.accessibleTextVirtual', function() {
 			assert.equal(accessibleText(target), 'foo 5 baz');
 		});
 
-		it('passes test 128', function() {
+		it.only('passes test 128', function() {
 			fixture.innerHTML = '<input type="text" id="test" title="foo" />';
 			axe._tree = axe.utils.getFlattenedTree(fixture);
 			var target = fixture.querySelector('#test');
@@ -2861,7 +2861,7 @@ describe('text.accessibleTextVirtual', function() {
 
 		// Skip from 128 - 138 as those are name description cases
 
-		it('passes test 139', function() {
+		it.only('passes test 139', function() {
 			fixture.innerHTML =
 				'<style>' +
 				'  .hidden { display: none; }' +
