@@ -2842,7 +2842,7 @@ describe('text.accessibleTextVirtual', function() {
 			assert.equal(accessibleText(target), 'foo 5 baz');
 		});
 
-		it('passes test 127', function() {
+		it.only('passes test 127', function() {
 			fixture.innerHTML =
 				'<input type="text" id="test" />' +
 				'<label for="test">foo <input role="spinbutton" type="number" value="5" min="1" max="10" aria-valuenow="5" aria-valuemin="1" aria-valuemax="10"> baz' +
@@ -2897,7 +2897,7 @@ describe('text.accessibleTextVirtual', function() {
 			);
 		});
 
-		it('passes test 140', function() {
+		it.only('passes test 140', function() {
 			fixture.innerHTML =
 				'<style>' +
 				'  .hidden { display: none; }' +
@@ -3093,7 +3093,7 @@ describe('text.accessibleTextVirtual', function() {
 			assert.equal(accessibleText(target), 'This is a test.');
 		});
 
-		it('passes test 153', function() {
+		it.only('passes test 153', function() {
 			fixture.innerHTML =
 				'<style>' +
 				'  .hidden { display: none; }' +
@@ -3151,7 +3151,7 @@ describe('text.accessibleTextVirtual', function() {
 			assert.equal(accessibleText(target), 'Flash the screen 1 times.');
 		});
 
-		it('passes test 156', function() {
+		it.only('passes test 156', function() {
 			fixture.innerHTML =
 				'<style>' +
 				'  .hidden { display: none; }' +
